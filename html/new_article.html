@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发布</title>
+    <link href="../css/article_show.css" rel="stylesheet" type="text/css"/>
+</head>
+<?php
+    include "session.php";
+?>
+<body>
+    <div class="show_div">
+        <form action="../php/new_article.php" method="POST">
+            <h1>发布文章</h1>
+            <h3>标题</h3>
+            <input class="show_text" type="text" name="title">
+            <h3>作者</h3>
+            <input class="show_text" type="text" name="author">
+            <h3>内容</h3>
+            <textarea class="show_text" rows="20" cols="40" name="content"></textarea>
+            <input class="show_btn" type="submit" value="发布">
+            <a href="../php/personal.php">返回主页</a>
+        </form>
+    </div>
+</body>
+</html>
