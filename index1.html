@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <link rel="stylesheet" href="./index1.css">
+        <style type="text/css">
+		#sub_menu_1,#sub_menu_2{
+			display: none;
+		}
+		ul li:hover{
+			cursor: pointer;
+		}
+	</style>
+        <script>
+            function url(){
+                var ret=confirm("想访问的URL？");
+                alert(ret);
+                
+
+            }
+
+        </script>
+    
+
+    </head>
+
+    <body>
+        <div id="main">
+            <div id = "header">
+                <h1>欢迎访问菜单项目示例</h1>
+            </div>
+            <div id="menu-left">
+                <div class = "content">
+            <!--左侧导航栏-->
+            <div class = "content-left">
+                <div class = "left-title">
+                    <a href = "#">系统菜单</a>
+                </div>
+
+                <!--水平线-->
+                <div class = "seg"></div>
+
+                <!--菜单栏导航-->
+                <div class = "nav">
+                    <!--每一个菜单栏项-->
+                    <div class = "nav-menu">
+                        <!--主标题-->
+                        <ul>
+                            <li onclick = "f('sub_menu_1')">菜单功能一
+                                <ul id="sub_menu_1">
+                                    <li><a onclick  = "check(1)">操作功能一</a></li>
+                                    <li><a onclick = "url()">操作功能二</li>
+                                    <li><a onclick = "check(3)">操作功能三</li>
+                                
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class = "nav-menu">
+                        <!--主标题-->
+                        <ul>
+                            <li onclick = "f('sub_menu_2')">菜单功能二
+                                <ul id="sub_menu_2">
+                                    <li><a href = "#">操作功能一</a></li>
+                                    <li><a href = "#">操作功能二</li>
+                                    <li><a href = "#">操作功能三</li>
+                                
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--水平线-->
+                <div class = "seg"></div>
+            </div>
+
+        </div>
+            
+            </div>
+            <div id="content">页面内容</div>
+            <div id="footer">页面底部</div>   
+        </div>
+
+
+
+
+
+    </body>
+    <script src="./index1.js"></script>
+</html>

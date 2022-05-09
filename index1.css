@@ -1,0 +1,143 @@
+body {
+    margin: 0
+}
+
+div#main {
+    width: 100%;
+    height: 100%;
+}
+
+div#header {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    font-size: 30px;
+    color: #FFFFFF;
+    background-color: #2a313c;
+    Background-size:100%
+}
+
+/* div#menu-left {
+    width: 20%;
+    height: 550px;
+    
+    float: left;
+    overflow-y: scroll;
+    overflow-x: scroll;
+} */
+
+div#menu-right {
+    width: 15%;
+    height: 550px;
+    background-color: white;
+    float: right;
+}
+
+div#content {
+    width: 80%;
+    height: 550px;
+    background-color: lightgoldenrodyellow;
+    float: left;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+div#footer {
+    width: 100%;
+    height: 80px;
+    background-color: lightblue;
+    clear: both;
+}
+
+ /* 内容 */
+ .content {
+    width: 100%;
+    height: 100%;
+}
+
+.content-left {
+    width: 19%;
+    height: 600px;
+    background-color: #24d5e5;
+    float: left;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.content-right {
+    width: 81%;
+    height: 600px;
+    background-color: #6495ED;
+    float: left;
+}
+
+.left-title {
+    width: 100%;
+    height: 50px;
+}
+
+.left-title > a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    /*去掉a下默认下划线*/
+    text-decoration: none;
+}
+
+/*分割线*/
+.seg {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+
+.nav {
+    /*上下5,左右0*/
+    margin: 5px 0;
+}
+
+/*菜单项主标题*/
+.nav-title {
+    height: 40px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+/*子标题内容区*/
+.nav-content {
+    width: 100%;
+    height: 100%;
+    background-color: #1bbdda;
+
+}
+
+/*子标题的样式*/
+.nav-content > li > a {
+    display: block;
+    width: 100%;
+    height: 30px;
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+}
+
+/*子标题鼠标经过时的改变颜色*/
+.nav-content > a:hover {
+    color: #FFFFFF;
+    background-color: #12040c;
+}
+
+/*内容区*/
+.content-right{
+    font-size: 50px;
+    line-height: 600px;
+    text-align: center;
+}
