@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/Summer.css">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Summer</title>
+    <style>
+        canvas { position: absolute; z-index: 10; top: 130; left: 0; opacity: 0.5; }
+    </style>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            var W = $(window).width(),
+                H = $(window).height(),
+                x2 = -15, len = 30, count = 100;
+            var canvas = document.getElementById("snow");
+            canvas.width = W;
+            canvas.height = H;
+            var ctx = canvas.getContext('2d');
+
+            setInterval(clearCanvas,100);
+            function clearCanvas() {
+                ctx.clearRect(0, 0, W, H);
+                draws();
+            }
+
+            function draw(x, y) {
+                //canvas写渐变：createLinearGradient（startX,startY,endX,endY）
+                var grd = ctx.createLinearGradient(x, y, x + x2, y + len);
+                grd.addColorStop(0, "rgba(0,0,0,0)");
+                grd.addColorStop(0.5, "rgba(105,105,105,1)");
+                grd.addColorStop(1, "rgba(255,255,255,1)");
+                ctx.strokeStyle = grd;
+
+                ctx.beginPath();
+                ctx.moveTo(x, y);
+                ctx.lineTo(x + x2, y + len);
+                ctx.lineWidth = 2;
+                ctx.stroke();
+                ctx.closePath();
+            }
+            function draws() {
+                for (var i = 1; i <= count; i++) {
+                    console.log(i)
+                    draw(Math.random() * W, Math.random() * H);
+                }
+            }
+        });
+    </script>
+
+</head>
+<body>
+    <div id="in_box">
+        <div id ="Kbai">
+            <div class="logo">
+                
+            </div>
+            <div>
+                <a href='../html/Spring.html'><img src="../images/music_img.png" width="163px" height="109px"></a>
+                <a href='../html/Summer.html'><img src="../images/music_img.png" width="163px" height="109px"></a>
+                <a href='../html/Autumn.html'><img src="../images/music_img.png" width="163px" height="109px"></a>
+                <a href='../html/Winter.html'><img src="../images/music_img.png" width="163px" height="109px"></a>
+            </div>
+        </div>
+    </div>
+    <canvas id="snow">不支持canvas</canvas>
+    
+</body>
+</html>

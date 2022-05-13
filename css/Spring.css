@@ -1,0 +1,76 @@
+body{
+    background: lightgreen;
+    text-align: center;
+}
+html {
+    height: 100%;
+    margin: 0;
+}
+.falling-leaves {
+    position: absolute;
+    top: 130px;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    max-width: auto;
+    max-height: auto;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+
+    border-radius: 50px;
+    background-size: cover;
+    overflow: hidden;
+}
+.leaf-scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.leaf-scene div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../images/leaf_green.svg) no-repeat;
+    background-size: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+/* 设置logo div的规格 */
+.logo {
+    height: 20px;
+}
+/* 设置class:logo 下的p标签  */
+.logo p{
+    border: 1px solid lightgreen;
+    /* background: url(../images/music_img.jpg) no-repeat;//没占满不再重复 */
+    /* 控制长宽，包裹住logo图片 */
+    width: 163px;
+    height: 109px;
+    display: inline-block;
+    margin: 16px 0;/*外边距 上下，左右*/
+}
+
+
+#in_box{
+    width: 100%;
+    
+    /* background-image: url(../images/bg.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#Kbai{
+    /* 控制该div的最小窗口放缩尺寸 */
+    min-width: 380px;
+    /* 主页面 */
+    min-height: auto;
+    margin: auto;
+}
