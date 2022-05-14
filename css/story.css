@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0
 }
+body{
+    background:rgb(189, 224, 235) top center;
+    text-align: center;
+    margin: auto;
+}
 
 .home {
     height: 100%;
@@ -19,9 +24,10 @@ h1 {
     text-align: center;
 }
 
-span {
-    display: block;
+a{
+    /* display: block; */
     text-align: center;
+    text-decoration-line: none;
 }
 
 .stars {
@@ -95,179 +101,17 @@ span {
     font-weight: 500;
 }
 
-.icon {
-    width: 15px;
-    height: 15px;
-    padding: 5px;
-    border: 2px solid #fff;
-    border-radius: 100%;
-    position: absolute;
-    left: 49%;
-    bottom: 50px;
-    animation: downs 2s linear infinite;
-}
-
-@keyframes downs {
-    from {
-        transform: translatey(0px);
-        opacity: .6;
-    }
-    to {
-        transform: translatey(30px);
-        opacity: .8;
-    }
-}
-
-.ribbon {
+.content1{
+    width: 100%;
+    height: 200px;
+    display:-webkit-flex;
     display: flex;
-    justify-content: center;
-    position: absolute;
-    right: 300px;
-    top: 50px;
-    margin: auto;
+    /* 写两个这个是为了兼容性，效果都是一样的 */
+    justify-content: space-around;
+    /* 四周间距 ‘留天地’ */
+    margin: 8px 8px 8px 8px;
 }
 
-.ribbon:after,
-.ribbon:before {
-    margin-top: 0.5em;
-    content: "";
-    display: flex;
-;
-    border: 1.5em solid #fff;
-}
-
-.ribbon:after {
-    border-right-color: transparent;
-}
-
-.ribbon:before {
-    border-left-color: transparent;
-}
-
-.ribbon a:link,
-.ribbon a:visited {
-    color: #000;
-    text-decoration: none;
-    height: 3.5em;
-    overflow: hidden;
-}
-
-.ribbon span {
-    background: #fff;
-    display: inline-block;
-    line-height: 3em;
-    padding: 0 1.5em;
-    margin-top: 0.5em;
-    position: relative;
-    -webkit-transition: background-color 0.2s, margin-top 0.2s;
-    /* Saf3.2+, Chrome */
-    -moz-transition: background-color 0.2s, margin-top 0.2s;
-    /* FF4+ */
-    -ms-transition: background-color 0.2s, margin-top 0.2s;
-    /* IE10 */
-    -o-transition: background-color 0.2s, margin-top 0.2s;
-    /* Opera 10.5+ */
-    transition: background-color 0.2s, margin-top 0.2s;
-}
-
-.ribbon a:hover span {
-    background: #FFD204;
-    margin-top: 0;
-}
-
-.ribbon span:before {
-    content: "";
-    position: absolute;
-    top: 3em;
-    left: 0;
-    border-right: 0.5em solid #9B8651;
-    border-bottom: 0.5em solid #fff;
-}
-
-.ribbon span:after {
-    content: "";
-    position: absolute;
-    top: 3em;
-    right: 0;
-    border-left: 0.5em solid #9B8651;
-    border-bottom: 0.5em solid #fff;
-}
-
-.introduce {
-    display: flex;
-    flex-direction: column;
-}
-
-.introduce_item {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-}
-
-.introduce_item_img {
-    width: 800px;
-    height: 500px;
-}
-
-.introduce_item_title {
-    width: 300px;
-    font-size: 18px;
-    line-height: 36px;
-    align-self: center;
-    padding-left: 100px;
-}
-
-.introduce_item_titles {
-    width: 300px;
-    font-size: 18px;
-    line-height: 36px;
-    align-self: center;
-    padding-right: 100px;
-}
-
-audio {
-    position: fixed;
-    bottom: 50px;
-    right: 0;
-}
-
-.music_img {
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    width: 40px;
-    height: 30px;
-    animation: muscis 5s linear infinite;
-}
-
-@keyframes muscis {
-    from {
-        transform: rotate (0deg);
-        opacity: .6;
-    }
-    to {
-        transform: rotate(360deg);
-        opacity: .8;
-    }
-}
-
-.icons {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 400px;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.icons_items {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    margin-top: 80px;
-    width: 200px;
-}
-
-.icons_items_imgs {
-    width: 200px;
-    margin-bottom: 30px;
+.content1 .list{
+    border: 1px solid lawngreen;
 }

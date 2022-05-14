@@ -1,67 +1,38 @@
-/* 给一个元素中设置overflow:hidden，那么该元素的内容若超出了给定的宽度和高度属性，
-那么超出的部分将会被隐藏，不占位。 */
-html{overflow: hidden;}
 
-/* *{margin:0; padding:0;}代表了网页中所有元素，包括body ,ul, li列表标签 ,p,H标题
-标签,dd,dt 等……都有默认的margin 或padding值的，加上这句就可以删除浏览器这些默认值，
-方面后面的设置。 */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,img {padding:0;margin:0;}
-
-body{
-    background:rgb(189, 224, 235) top center;
-    text-align: center;
+.content p{
+    margin-top: 100px;
+    font-size: 30px;
+    font-family:sans-serif;
 }
 
-
-/* 设置logo div的规格 */
-.logo {
-    height: 100px;
+.content1{
+    background: l;
+    overflow: hidden;
+    width: auto;
+    height: 100%;
+    margin-left: 8px;
+    margin-right: 8px;
+    display:-webkit-flex;
+    display: flex;
+    /* 写两个这个是为了兼容性，效果都是一样的 */
+    justify-content: space-around;
+    /* 四周间距 ‘留天地’ */
+    margin: 8px 8px 8px 8px;
 }
-/* 设置class:logo 下的p标签  */
-.logo p{
-    border: 1px solid lightgreen;
-    /* background: url(../images/music_img.jpg) no-repeat;//没占满不再重复 */
-    /* 控制长宽，包裹住logo图片 */
-    width: 163px;
-    height: 109px;
-    display: inline-block;
-    margin: 16px 0;/*外边距 上下，左右*/
-}
 
-
-#logoHead{
-    width: 100%;
+.content1 .list{
+    min-width: 50%;
     
-    /* background-image: url(../images/bg.jpg); */
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#logoBox{
-    /* 控制该div的最小窗口放缩尺寸 */
-    min-width: 380px;
-    /* 主页面 */
-    min-height: auto;
-    margin: auto;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* .content {
-    height: 600px;
-    width: 25%;
-    border: 1px solid lightsalmon;
-}
-
-.content .content-left{
-    border: 1px solid lawngreen;
-} */
-
-
-.jumbotron p{
-    /* float: right; */
+    font-style: oblique;
+    font-size: 20px;
+    /* margin-left: 8px; */
+    /* margin-right: 8px; */
+    margin-top: 50px;
+    /* border: 1px solid lawngreen; */
     
-    font-size: 20;
+}
+.content1 .list img{
+    max-height: auto;
+    max-width: 98%;
+    border-radius: 25px;
 }
