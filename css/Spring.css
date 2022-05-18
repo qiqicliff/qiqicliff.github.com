@@ -45,11 +45,11 @@ html {
 }
 /* 设置logo div的规格 */
 .logo {
-    height: 20px;
+    height: 8px;
 }
 /* 设置class:logo 下的p标签  */
 .logo p{
-    border: 1px solid lightgreen;
+    border: 1px solid lemonchiffon;
     /* background: url(../images/music_img.jpg) no-repeat;//没占满不再重复 */
     /* 控制长宽，包裹住logo图片 */
     width: 163px;
@@ -74,3 +74,47 @@ html {
     min-height: auto;
     margin: auto;
 }
+
+.content p{
+    margin-top: 100px;
+    font-size: 30px;
+    font-family:sans-serif;
+}
+
+.content1{
+    border: 2px solid lightgoldenrodyellow;
+    border-radius: 15px;
+    background: l;
+    overflow: hidden;
+    width: auto;
+    height: 100%;
+    line-height: 45px;
+    margin-left: 8px;
+    margin-right: 8px;
+    display:-webkit-flex;
+    display: flex;
+    /* 写两个这个是为了兼容性，效果都是一样的 */
+    justify-content: space-around;
+    /* 四周间距 ‘留天地’ */
+    margin: 8px 8px 8px 8px;
+}
+
+.content1 .list{
+    min-width: 50%;
+    
+    text-align:center;
+    top : 50%;
+    font-style: oblique;
+    font-size: 20px;
+    /* margin-left: 8px; */
+    /* margin-right: 8px; */
+    margin: 8px 8px 0 0;
+    /* border: 1px solid lawngreen; */
+    
+}
+.content1 .list img{
+    max-height: auto;
+    max-width: 98%;
+    border-radius: 25px;
+}
+
