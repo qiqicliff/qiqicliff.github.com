@@ -71,3 +71,9 @@
             max-width: 98%;
             border-radius: 25px;
         }
+        .footer a{
+            font-size: 30px;
+        
+            background: lightcoral;
+            border-radius: 5px;
+        }

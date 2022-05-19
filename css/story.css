@@ -107,7 +107,9 @@ a{
     font-size: 30px;
     font-family:sans-serif;
 }
-
+p#story{
+    font-size: 20px
+}
 .content1{
     border: 2px solid lightgoldenrodyellow;
     border-radius: 15px;
@@ -141,4 +143,11 @@ a{
     max-height: auto;
     max-width: 98%;
     border-radius: 25px;
+}
+
+.footer a{
+    font-size: 30px;
+
+    background: lightcoral;
+    border-radius: 5px;
 }

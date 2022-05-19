@@ -7,7 +7,10 @@ body {
 
 /* 给一个元素中设置overflow:hidden，那么该元素的内容若超出了给定的宽度和高度属性，
 那么超出的部分将会被隐藏，不占位。 */
-html{overflow: hidden;}
+html{
+    height: 100%;
+
+}
 
 /* *{margin:0; padding:0;}代表了网页中所有元素，包括body ,ul, li列表标签 ,p,H标题
 标签,dd,dt 等……都有默认的margin 或padding值的，加上这句就可以删除浏览器这些默认值，
@@ -17,6 +20,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 body{
     background:lightblue;
     text-align: center;
+    height: 100%;
 }
 
 /* 设置logo div的规格 */
@@ -90,4 +94,10 @@ body{
     max-height: auto;
     max-width: 98%;
     border-radius: 25px;
+}
+.footer a{
+    font-size: 30px;
+
+    background: lightcoral;
+    border-radius: 5px;
 }

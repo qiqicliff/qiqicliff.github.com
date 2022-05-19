@@ -36,3 +36,9 @@
     max-width: 98%;
     border-radius: 25px;
 }
+p#story{
+    margin-top: 20px;
+    background: lavenderblush;
+    font-size: 20px;
+    text-indent:2em
+}
