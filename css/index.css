@@ -21,7 +21,8 @@
 }
 
 .content1 .list{
-    min-width: 50%;
+    /* min-width: 30%; */
+    max-width: 30%;
     
     font-style: oblique;
     font-size: 20px;
@@ -41,4 +42,11 @@ p#story{
     background: lavenderblush;
     font-size: 20px;
     text-indent:2em
+}
+p#story1{
+    margin-top: 20px;
+    text-align: center;
+    background: lavenderblush;
+    font-size: 20px;
+    /* text-indent:2em */
 }
